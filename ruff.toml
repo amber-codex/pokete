@@ -1,0 +1,7 @@
+# if added to pyproject add this: [tool.ruff]
+line-length = 88
+indent-width = 4
+fix = true
+
+# This file is for editing how ruff formats the project files, you can also ignore errors. 
+# Here are some recommendations for how to use this file https://docs.astral.sh/ruff/configuration/
