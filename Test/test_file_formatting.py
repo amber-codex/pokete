@@ -9,7 +9,7 @@ def test_ruff_formats_intent_correctly(tmp_path):
 
     # Running Ruff as it would be done in the terminal:
     result_intent = subprocess.run(
-        ["py", "-m","ruff", "format", str(test_file_intent), "--config=ruff.toml"],
+        ["python", "-m","ruff", "format", str(test_file_intent), "--config=ruff.toml"],
         capture_output=True,
         text=True
     )
@@ -35,7 +35,7 @@ def test_ruff_formats_line_length_correctly(tmp_path):
 
     # Running Ruff as it would be done in terminal
     result_string = subprocess.run(
-        ["py", "-m","ruff", "format", str(test_file_string), "--config=ruff.toml"],
+        ["python", "-m","ruff", "format", str(test_file_string), "--config=ruff.toml"],
         capture_output=True,
         text=True
     )
@@ -82,7 +82,7 @@ def test_ruff_formats_line_length_correctly(tmp_path):
     test_file_num.write_text(bad_code_num)
     
     result_num = subprocess.run(
-        ["py", "-m","ruff", "format", str(test_file_num), "--config=ruff.toml"],
+        ["python", "-m","ruff", "format", str(test_file_num), "--config=ruff.toml"],
         capture_output=True,
         text=True
     )
