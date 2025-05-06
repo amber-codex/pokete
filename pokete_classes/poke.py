@@ -101,9 +101,9 @@ can't have more than 4 attacks!"
             esccode=Color.underlined + self.type.color,
             state="float")
         self.text_xp = se.Text(
-            f"XP:{self.xp - (self.lvl() ** 2 - 1)}/\
-{((self.lvl() + 1) ** 2 - 1) - (self.lvl() ** 2 - 1)}",
-            state="float")
+    f"XP:{self.xp - ((self.lvl() ** 2 - 1) // 2)}/\
+    {(((self.lvl() + 1) ** 2 - 1) // 2) - ((self.lvl() ** 2 - 1) // 2)}",
+    state="float")
         self.text_type = se.Text(self.type.name.capitalize(),
                                  state="float", esccode=self.type.color)
         self.tril = se.Object("<", state="float")
