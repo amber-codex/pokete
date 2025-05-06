@@ -168,8 +168,8 @@ can't have more than 4 attacks!"
         old_lvl = self.lvl()
         self.xp += _xp
         self.poke_stats.add_xp(_xp)
-        self.text_xp.rechar(f"XP:{self.xp - (self.lvl() ** 2 - 1)}/\
-{((self.lvl() + 1) ** 2 - 1) - (self.lvl() ** 2 - 1)}")
+        self.text_xp.rechar(f"XP:{self.xp - ((self.lvl() ** 2 - 1) // 2)}/\
+{(((self.lvl() + 1) ** 2 - 1) // 2) - ((self.lvl() ** 2 - 1) // 2)}")
         self.text_lvl.rechar(f"Lvl:{self.lvl()}")
         logging.info("[Poke][%s] Gained %dxp (curr:%d)", self.name, _xp, self.xp)
         if old_lvl < self.lvl():
@@ -179,8 +179,8 @@ can't have more than 4 attacks!"
 
     def lvl(self):
         """RETURNS:
-            Current level"""
-        return int(math.sqrt(self.xp + 1))
+            Current level (XP reduced by half)"""
+        return int(math.sqrt(2 * self.xp + 1))
 
     def attack(self, attack, enem, fightmap, providers):
         """Attack process
@@ -339,7 +339,7 @@ def upgrade_by_one_lvl(poke, figure, _map):
         poke: The pokete, that will be upgraded
         figure: The figure object the Pokete belongs to
         _map: The map the upgrade happens on"""
-    poke.add_xp((poke.lvl()+1)**2-1 - ((poke.lvl())**2-1))
+    poke.add_xp(((poke.lvl() + 1)**2 - 1) // 2 - ((poke.lvl())**2 - 1) // 2)
     poke.set_vars()
     poke.learn_attack(_map, _map)
     poke.evolve(figure, _map)
