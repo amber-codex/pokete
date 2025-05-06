@@ -68,7 +68,8 @@ You can find different versions of this wiki:
        2. [Diamondos](#diamondos)
        3. [Lilstone](#lilstone)
        4. [Poundi](#poundi)
-       5. [Steini](#steini)
+       5. [Rare Steini](#rare-steini)
+       6. [Steini](#steini)
    10. [Undead Poketes](#undead-poketes)
        1. [Angrilo](#angrilo)
        2. [Bablbam](#bablbam)
@@ -1548,6 +1549,36 @@ A powerful and heavy stone Pokete that lives in mountain caves.
 - Can be found in:
    + Big Mountain Sea
    + Big Mountain Cave
+- Does not evolve
+
+
+#### Rare Steini
+A special version of Steini, gifted only a few trainers.
+
+```
+ +-------+ 
+ | o   o | 
+ |  ---  | 
+ +-------+ 
+
+```
+
+- Type: [Stone](#types)
+- Health points: 30
+- Attack factor: 5
+- Defense factor: 5
+- Initiative: 5
+- Missing chance: 2
+- Rarity: 1
+- Loosing experience: 2
+- Attacks:
+   + [Tackle](#tackle)
+   + [Polish](#polish)
+   + [Rock & Roll](#rock-&-roll)
+   + [Brick Throw](#brick-throw)
+- Active: Always
+- Can be found in:
+   + Nowhere
 - Does not evolve
 
 
