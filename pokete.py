@@ -886,13 +886,13 @@ def read_save():
         "y": 5,
         "achievements": [],
         "pokes": {
-            "0": {"name": "steini", "xp": 50, "hp": "SKIP",
+            "0": {"name": "rare_steini", "xp": 50, "hp": "SKIP",
                   "ap": ["SKIP", "SKIP"]}
         },
         "inv": {"poketeball": 15, "healing_potion": 1},
         "settings": {
             "load_mods": False},
-        "figure.caught_pokes": ["steini"],
+        "figure.caught_pokes": ["rare_steini"],
         "visited_maps": ["playmap_1"],
         "startup_time": 0,
         "used_npcs": [],
