@@ -355,7 +355,7 @@ P│$""",
             "d_next": "playmap_52",
             "text": """ #│#
  P│A
-├─┘#
+├─┘
  $ #""",
             "color": "yellow"
         },
@@ -371,7 +371,13 @@ P│$""",
                     "the beautiful plants and wonderful "
                     "nature reserves.""",
             "a_next": "playmap_39",
-
+            "text": """
+____""",
+            "color": "yellow"
+        },
+        "add": {
+            "x": 39,
+            "y": 2
         }
     }
 
