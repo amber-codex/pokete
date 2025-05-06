@@ -753,6 +753,7 @@ A very small whatever that sticks out of the ground.
    + Route 0
    + The Fields of Agrawos
    + Town of Watermill
+   + Watermill School
 - Evolves to [Dicki](#dicki) at level 35
 
 #### Raupathor day
@@ -1110,6 +1111,7 @@ A not at all suspicious plant.
    + The Fields of Agrawos
    + Agrawos
    + Town of Watermill
+   + Watermill School
 - Does not evolve
 
 
@@ -1912,6 +1914,7 @@ A freshwater fighting fish Pokete.
 - Active: Always
 - Can be found in:
    + Town of Watermill
+   + Watermill School
 - Does not evolve
 
 
@@ -1942,6 +1945,7 @@ A crusty Pokete that will pinch your toes and check whether or not you borrowed 
 - Active: Always
 - Can be found in:
    + Town of Watermill
+   + Watermill School
 - Does not evolve
 
 
