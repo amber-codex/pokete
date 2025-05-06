@@ -23,6 +23,7 @@ jobs:
           pip install scrap_engine pyyaml
           pip install pytest
           pip install coverage
+          pip install ruff
 
       - name: gen-wiki
         run: python util.py wiki
