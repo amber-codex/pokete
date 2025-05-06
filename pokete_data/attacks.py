@@ -170,6 +170,20 @@ attacks = {
         "ap": 30,
     },
     # stone attacks
+    "rock_and_roll": {
+        "name": "Rock & Roll",
+        "factor": 2.75,
+        "action": None,
+        "world_action": "",
+        "move": ["attack"],
+        "miss_chance": 0.1,
+        "min_lvl": 1,
+        "desc": "Plays loud music to damage eardrums.",
+        "types": ["stone"],
+        "effect": None,
+        "is_generic": False,
+        "ap": 15,
+    },
     "pepple_fire": {
         "name": "Pebble Fire",
         "factor": 1,
