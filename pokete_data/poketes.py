@@ -48,6 +48,28 @@ pokes = {
  +-------+ """,
             "esc": None}],
     },
+    "rare_steini": {
+        "name": "Rare Steini",
+        "hp": 30,
+        "atc": 5,
+        "defense": 5,
+        "attacks": ["tackle", "politure", "rock_and_roll", "brick_throw"],
+        "pool": [],
+        "miss_chance": 2,
+        "desc": "A special version of Steini, gifted only a few trainers.",
+        "lose_xp": 2,
+        "rarity": 1,
+        "types": ["stone", "normal"],
+        "evolve_poke": "",
+        "evolve_lvl": 0,
+        "initiative": 5,
+        "ico": [{
+            "txt": r""" +-------+
+ | o   o |
+ |  ---  |
+ +-------+ """,
+            "esc": None}],
+    },
     "mowcow": {
         "name": "Mowcow",
         "hp": 20,
