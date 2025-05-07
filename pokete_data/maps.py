@@ -611,7 +611,7 @@ maps = {
         "width": 30,
         "song": "Map.mp3",
         "pretty_name": "workshop",
-        "extra": None,
+        "extra_actions": None,
         "poke_args": None,
         "weather": None
 
@@ -621,7 +621,7 @@ maps = {
         "width": 25,
         "song": "Map.mp3",
         "pretty_name": "house",
-        "extra": None,
+        "extra_actions": None,
         "poke_args": None,
         "weather": None
     },
@@ -630,7 +630,7 @@ maps = {
         "width": 65,
         "song": "Map.mp3",
         "pretty_name": "Watermill School",
-        "extra": None,
+        "extra_actions": None,
         "poke_args":{
             "pokes": ["kartmen", "rustacean", "lil_nut", "megapois"],
             "minlvl": 1100,
@@ -643,7 +643,7 @@ maps = {
         "width": 30,
         "song": "Map.mp3",
         "pretty_name": "Watermill Center",
-        "extra": None,
+        "extra_actions": None,
         "poke_args": None,
         "weather": None
     },
