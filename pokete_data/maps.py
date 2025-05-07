@@ -594,8 +594,8 @@ maps = {
         "weather": None
     },
     "playmap_52":{
-        "height": 70,
-        "width": 130,
+        "height": 75,
+        "width": 135,
         "song": "Map.mp3",
         "pretty_name": "Town of Watermill",
         "extra_actions": None,
