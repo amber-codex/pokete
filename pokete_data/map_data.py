@@ -152,12 +152,12 @@ map_data = {
             "dor_playmap_51_1": {
                 "x": 90,
                 "y": 12,
-                "args": {"map": "playmap_57", "x": 1, "y": 28}
+                "args": {"map": "playmap_51", "x": 1, "y": 28}
             },
             "dor_playmap_51_2": {
                 "x": 90,
                 "y": 13,
-                "args": {"map": "playmap_57", "x": 1, "y": 29}
+                "args": {"map": "playmap_51", "x": 1, "y": 29}
             },
         },
         "balls": {
