@@ -29,7 +29,7 @@ npcs = {
         "fn": "heal",
         "map": "playmap_56",
         "x": 17,
-        "y": 9
+        "y": 8
     },
     "npc_1": {
         "texts": [],
