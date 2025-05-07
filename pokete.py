@@ -907,12 +907,12 @@ def read_save():
     if os.path.exists(SAVEPATH/"pokete.json"):
         with open(SAVEPATH/"pokete.json") as _file:
             _si = json.load(_file)
-    elif os.path.exists("home"/".cache"/"pokete"/"pokete.json"):
-        with open("home"/".cache"/"pokete"/"pokete.json") as _file:
+    elif os.path.exists(HOME/".cache"/"pokete"/"pokete.json"):
+        with open(HOME/".cache"/"pokete"/"pokete.json") as _file:
             _si = json.load(_file)
-    elif os.path.exists("home"/".cache"/"pokete"/"pokete.py"):
+    elif os.path.exists(HOME/".cache"/"pokete"/"pokete.py"):
         l_dict = {}
-        with open("home"/".cache"/"pokete"/"pokete.py", "r") as _file:
+        with open(HOME/".cache"/"pokete"/"pokete.py", "r") as _file:
             exec(_file.read(), {"session_info": _si}, l_dict)
         _si = json.loads(json.dumps(l_dict["session_info"]))
     return _si

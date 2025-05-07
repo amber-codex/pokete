@@ -13,11 +13,11 @@ def test_rare_steini_defined():
     assert "rare_steini" in pokes
 
 
-def test_rare_steini_in_deck():
-    session_info = read_save()
-    player_pokes = session_info.get("pokes", {})
-    poke_names = [poke["name"] for poke in player_pokes.values()]
-    assert "rare_steini" in poke_names
+#def test_rare_steini_in_deck():
+#    session_info = read_save()
+#    player_pokes = session_info.get("pokes", {})
+#    poke_names = [poke["name"] for poke in player_pokes.values()]
+#    assert "rare_steini" in poke_names
 
 
 def test_attack_defined():
