@@ -21,34 +21,35 @@ def test_map_attributes(map_name):
             objs += list(dict_attr.keys())
     for current_req in required_attributes:
         assert current_req in objs
-            
-@pytest.mark.parametrize("map_name", new_maps)           
-def test_objects(map_name):
-    maps_check_y = maps[map_name]["height"]
-    maps_check_x = maps[map_name]["width"]
+
+all_map_names = [name for name in maps.keys() if not name.startswith("__")]
+# print(all_map_names)
+@pytest.mark.parametrize("map_name1", all_map_names)           
+def test_objects(map_name1):
+    maps_check_y = maps[map_name1]["height"]
+    maps_check_x = maps[map_name1]["width"]
     def extract_dictionaries(nested_dict, result=None):
         if result is None:
             result = []
-
-        # Check if the current object is a dictionary
+            
         if isinstance(nested_dict, dict):
-            result.append(nested_dict)  # Add the current dictionary to the result
+            result.append(nested_dict)  
             for key, value in nested_dict.items():
                 # Recursively process nested dictionaries
                 extract_dictionaries(value, result)
-
         return result
     
-    separated_dicts = extract_dictionaries(map_data[map_name])
-    print(map_name)
-    print(separated_dicts)
+    separated_dicts = extract_dictionaries(map_data[map_name1])
+    # print(map_name1)
+    # print(separated_dicts)
+    
     for i in range(len(separated_dicts)):
         if "x" in separated_dicts[i].keys() and "y" in separated_dicts[i].keys() and 'args' not in separated_dicts[i].keys() and'map' not in separated_dicts[i].keys():
             test_x = separated_dicts[i]["x"]
             test_y = separated_dicts[i]["y"]
             statement = test_x <= maps_check_x and test_y <= maps_check_y
-            print(test_y, maps_check_y)
-            print(test_x,maps_check_x)
-            print(separated_dicts[i])
-            print(test_x <= maps_check_x and test_y <= maps_check_y)
+            # print(test_y, maps_check_y)
+            # print(test_x,maps_check_x)
+            # print(separated_dicts[i])
+            # print(test_x <= maps_check_x and test_y <= maps_check_y)
             assert statement
