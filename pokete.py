@@ -64,6 +64,9 @@ from util.command import RootCommand, Flag
 
 __t = time.time()
 
+# Home global
+HOME = Path.home()
+
 
 # Class definition
 ##################
@@ -1572,9 +1575,6 @@ copy of it alongside this software.""",
 
     # resizing screen
     tss()
-
-    # Home global
-    HOME = Path.home()
 
     # loading screen
     loading_screen = LoadingScreen(VERSION, CODENAME)
